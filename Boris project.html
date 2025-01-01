@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Playwrite+AU+VIC+Guides&family=Playwrite+CO+Guides&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        p {
+            direction: rtl;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #1a1a1a;
+            height: 70px;
+            position: sticky;
+            top: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+
+        }
+
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 20px;
+            margin-top: 10px;
+
+
+        }
+
+        .signature {
+            width: 300px;
+            color: #fff;
+            font-size: 25px;
+            font-family: 'Monsieur La Doulaise', cursive;
+            margin-left: 20px;
+            font-weight: 800;
+        }
+
+        nav ul {
+            list-style-type: none;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: right;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 60px;
+            padding: 0 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+            color: #d0d1d1;
+            kjhvvvvvvvrthbyggg
+        }
+
+        .works {
+            width: 100%;
+            height: 200px;
+            background-color: #0e4c57;
+            color: #fff;
+            text-align: center;
+            font-family: 'Playwrite AU Guides', cursive;
+            font-size: 20px;
+            font-weight: 800;
+            top: 5px;
+            position: relative;
+            box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+        }
+
+        .works p {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Playwrite AU Guides', cursive;
+            font-size: 20px;
+            margin-top: 20px;
+
+        }
+
+        .icons {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            background-color: #eceff0;
+            font-family: 'Playwrite AU Guides', cursive;
+            font-size: 20px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .icons img {
+            width: 50px;
+            height: 50px;
+            transition: 300ms;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgb(180, 179, 179);
+        }
+
+        .icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .about {
+            width: 100%;
+            height: 70vh;
+            background-color: #0e4c57;
+            color: #fff;
+            text-align: center;
+            font-family: 'Playwrite AU Guides', cursive;
+            font-size: 20px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-text {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Playwrite AU Guides', cursive;
+            font-size: 20px;
+            margin-top: 20px;
+            direction: rtl;
+        }
+
+        .about-text img {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgb(180, 179, 179);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-text button {
+            height: 40px;
+            background-color: #5789e4;
+            color: #e9e9e9;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: 'Playwrite AU Guides', cursive;
+            font-weight: 800;
+            line-height: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+
+
+        }
+
+        .about-text button:hover {
+            background-color: #c2d3f3;
+            color: #1b1b1b;
+            transform: scale(1.2);
+        }
+
+        .conteiners {
+            width: 100%;
+            height: 125vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: #0e4c57;
+            justify-content: center;
+            padding-left: 300px;
+            padding-right: 300px;
+
+
+
+
+
+        }
+
+        .conteiner {
+            width: 300px;
+            height: 470px;
+            background-color: #eef0f1;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(180, 179, 179);
+            margin: 0 auto;
+
+
+
+        }
+
+        .conteiner,
+        h1,
+        p,
+        button {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 5px;
+
+
+        }
+
+        .conteiner p {
+            padding: 20px;
+
+
+        }
+
+        .conteiner img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .conteiner button {
+            height: 40px;
+            background-color: #5789e4;
+            color: #e9e9e9;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: 'Playwrite AU Guides', cursive;
+            font-weight: 800;
+            line-height: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .conteiner button:hover {
+            background-color: #c2d3f3;
+            color: #1b1b1b;
+            transform: scale(1.2);
+        }
+
+        footer {
+            width: 100%;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 10px;
+
+        }
+
+        .social-media {
+            margin-bottom: 15px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+            border-radius: 50%;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.2);
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Для планшетов */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        /* Для мобильных устройств */
+        @media (max-width: 480px) {
+            nav {
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+
+
+            }
+
+            nav ul li a {
+                display: flex;
+                font-size: 15px;
+                padding: 0 10px;
+                height: 50px;
+                align-items: center;
+
+
+            }
+
+            nav ul {
+
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+
+
+            }
+
+            .logo,
+            .signature {
+                display: none;
+            }
+
+
+            h1 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            .works p {
+                font-size: 12px;
+            }
+
+            .about-text img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .conteiners {
+                grid-template-columns: repeat(1, 1fr);
+                padding-left: 10px;
+                padding-right: 10px;
+                height: auto;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="https://www.facebook.com/boris.bolmat" target="_blank"><img
+                    src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\Screenshot 2024-12-27 111922.png"
+                    alt="Boris"></a>
+        </div>
+        <div class="signature">Boris Bolmat</div>
+        <ul>
+            <li><a href="#home">ראשי</a></li>
+            <li><a href="#about">עליי</a></li>
+            <li><a href="#portfolio">פורטפוליו</a></li>
+            <li><a href="#skills">ניסיון</a></li>
+            <li><a href="#contact">אנשי קשר</a></li>
+        </ul>
+    </nav>
+    <div class="works">
+        <h1>פרויקטים</h1>
+        <div>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.</p>
+        </div>
+
+
+    </div>
+    <div class="icons">
+        <a href="https://www.w3schools.com/html/" target="_blank"><img
+                src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\icons8-html-48.png"
+                alt="HTML"></a>
+        <a href="https://www.w3schools.com/css/" target="_blank"><img
+                src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\icons8-css-100.png"
+                alt="CSS"></a>
+    </div>
+    <div class="about">
+        <div class="about-text">
+
+            <a href="https://www.facebook.com/boris.bolmat" target="_blank"><img
+                    src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\Screenshot 2024-12-27 111922.png"
+                    alt="Boris Bolmat"></a>
+            <h1>קצת עליי </h1>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.
+            </p>
+            <br>
+            <a href="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\קורות חיים בוריס בולמט.pdf"
+                target="_blank"> <button> להורדת קורות חיים</button></a>
+
+
+        </div>
+    </div>
+
+    <div class="conteiners">
+        <div class="conteiner item1">
+            <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\img 1.jpg"
+                alt="img 1">
+            <h1>פרויקט 1</h1>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.</p>
+            <a href="#" target="_blank"><button>להורדת הפרויקט</button></a>
+        </div>
+        <div class="conteiner item1">
+            <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\img 1.jpg"
+                alt="img 1">
+            <h1>פרויקט 1</h1>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.</p>
+            <a href="#" target="_blank"><button>להורדת הפרויקט</button></a>
+        </div>
+        <div class="conteiner item1">
+            <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\img 1.jpg"
+                alt="img 1">
+            <h1>פרויקט 1</h1>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.</p>
+            <a href="#" target="_blank"><button>להורדת הפרויקט</button></a>
+        </div>
+        <div class="conteiner item1">
+            <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\img 1.jpg"
+                alt="img 1">
+            <h1>פרויקט 1</h1>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.</p>
+            <a href="#" target="_blank"><button>להורדת הפרויקט</button></a>
+        </div>
+        <div class="conteiner item1">
+            <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\img 1.jpg"
+                alt="img 1">
+            <h1>פרויקט 1</h1>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.</p>
+            <a href="#" target="_blank"><button>להורדת הפרויקט</button></a>
+        </div>
+        <div class="conteiner item1">
+            <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\img 1.jpg"
+                alt="img 1">
+            <h1>פרויקט 1</h1>
+            <p>לורם איפסום הוא טקסט חסר הקשר וחסר משמעות בכוונה - וזאת כדי שעין הקורא לא "תצוד" בזמן הרפרוף עליו, מילה
+                שתסיח את דעתו.
+                לורם איפסום תוכנן בקפידה כך שיחקה במרקם ובקצב שלו טקסט אמיתי בעברית.</p>
+            <a href="#" target="_blank"><button>להורדת הפרויקט</button></a>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/boris.bolmat" target="_blank">
+                <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\facebook.jpg"
+                    alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/boriaa852023/" target="_blank">
+                <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\instg.jpg"
+                    alt="Instagram">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\twwiter 1.avif"
+                    alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\linked.png"
+                    alt="LinkedIn">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="C:\Users\boria\OneDrive\Документы\Pyton\full stack 9.92024\My Project\picturs\git hub.png"
+                    alt="GitHub">
+            </a>
+        </div>
+        <p>כל הזכויות שמורות לבוריס בולמט 2025 &copy;</p>
+    </footer>
+</body>
+
+</html
